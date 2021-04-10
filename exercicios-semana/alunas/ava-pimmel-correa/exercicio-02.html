@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+    <script>
+    var valor1 = parseInt(prompt("Insira o primeiro valor."));
+    var valor2 = parseInt(prompt("Insira o segundo valor."));
+    var valor3 = parseInt(prompt("Insira o terceiro valor."));
+    var valor4 = parseInt(prompt("Insira o quarto valor."));
+    var valor5 = parseInt(prompt("Insira o quinto valor."));
+    var i;
+    var pares = parseInt("0");
+    var impares = parseInt("0");
+    var positivos = parseInt("0");
+    var negativos = parseInt("0");
+
+    function checar(valor){
+        if(valor % 2 == 0){
+            pares++;
+        } else {
+            impares++;
+        }
+        if(valor > 0){
+            positivos++;
+        } else {
+            negativos++;
+        }
+
+    }
+    checar(valor1);
+    checar(valor2);
+    checar(valor3);
+    checar(valor4);
+    checar(valor5);
+    alert("Total de: \n"+pares+" numeros pares \n"+impares+" numeros impares \n"+positivos+" numeros positivos \n"+negativos+" numeros negativos");
+
+
+    </script>
+</body>
+
+</html>

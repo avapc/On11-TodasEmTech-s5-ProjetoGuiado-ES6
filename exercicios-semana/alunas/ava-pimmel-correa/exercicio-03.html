@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+
+<body>
+    <script>
+    let alcool = parseInt(0);
+    let gasolina = parseInt(0);
+    let diesel = parseInt(0);
+    function postoDeGalosina(){
+        let input;
+        let continuar = true;
+        while(continuar == true){
+            input = prompt("Insira o tipo de combustivel que foi inserido!\n1 para Alcool\n2 para Gasolina\n3 para Diesel\n4 para parar de inserir!");
+            
+            switch(input){
+                case "1":
+                    alcool++;
+                    break;
+                case "2":
+                    gasolina++;
+                    break;
+                case "3":
+                    diesel++;
+                    break;
+                case "4":
+                    continuar = false;
+                    break;
+                default:
+                    alert("Vc inseriu um numero invalido, tente novamente!\nLemrando que os numeros validos são 1,2,3 e 4.")
+                    postoDeGalosina();
+                    break;
+
+            }
+          
+        }
+        alert("MUITO OBRIGADO!\nAlcool: "+alcool+"\nGasolina: "+gasolina+"\nDiesel: "+diesel)
+        return;
+    }
+    postoDeGalosina();
+
+
+    </script>
+</body>
+
+</html>
